@@ -10,9 +10,9 @@ class Profile extends Model
  
  public static $rules =array(
      'name' => 'required',
-     'gender' => 'rquired',
+     'gender' => 'required',
      'hobby' => 'required',
-     'intoroduction' => 'required',
+     'introduction' => 'required',
       );
     //
 }
