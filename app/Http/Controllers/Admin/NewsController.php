@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use App\News;
+use App\History;
+
 class Newscontroller extends Controller
 {
   public function add ()
@@ -78,6 +80,12 @@ class Newscontroller extends Controller
       unset($news_form['_token']);
       // 該当するデータを上書きして保存する
       $news->fill($news_form)->save();
+      
+        $history = new History;
+        $history->news_id = $news->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
+
 
       return redirect('admin/news');
   }
