@@ -40,10 +40,12 @@ class ProfileController extends Controller
         
       // News Modelからデータを取得する
       $profile = Profile::find($request->id);
+      $profile_histories = $profile->profile_histories()->get();
+
       if (empty($profile)) {
         abort(404);    
       }
-      return view('admin.profile.edit', ['profile_form' => $profile]);
+      return view('admin.profile.edit', ['profile_form' => $profile, 'profile_histories' => $profile_histories]);
     
 
     }
