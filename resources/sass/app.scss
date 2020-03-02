@@ -1,9 +1,8 @@
 // Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+@import "variables";
+
 // Bootstrap
-// @import '~bootstrap/scss/bootstrap';
-// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import '~bootstrap/scss/bootstrap';
