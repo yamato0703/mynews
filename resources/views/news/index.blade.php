@@ -11,7 +11,7 @@
                             <div class="caption mx-auto">
                                 <div class="image">
                                     @if ($headline->image_path)
-                                        <img src="{{ $headline->image_path }}">
+                                        <img src="{{ $headline->image_path }}" style="object-fit: cover; width: 100%;">
                                     @endif
                                 </div>
                                 <div class="title p-2">
@@ -45,7 +45,7 @@
                             </div>
                             <div class="image col-md-6 text-right mt-4">
                                 @if ($post->image_path)
-                                   <img src="{{ $headline->image_path }}">
+                                   <img src="{{ $headline->image_path }}" class="coverimage" style="width: 240px; height: 200px; object-fit:cover;">
                                 @endif
                             </div>
                         </div>

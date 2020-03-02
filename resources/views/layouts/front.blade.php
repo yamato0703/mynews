@@ -17,6 +17,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="terxt/css">
         
         <link href="{{ secure_asset('css/app.css') }}" rel="stysheet">
+        <link href="{{ secure_asset('css/front.css') }}" rel="stysheet">
+        <link href="{{ secure_asset('css/mynews.css') }}" rel="stysheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         
     </head>
