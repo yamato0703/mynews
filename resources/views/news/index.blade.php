@@ -9,14 +9,15 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="caption mx-auto">
+                                <div class="title p-2">
+                                    <h1>{{ str_limit($headline->title, 70) }}</h1>
+                                </div>
                                 <div class="image">
                                     @if ($headline->image_path)
                                         <img src="{{ $headline->image_path }}" style="object-fit: cover; width: 100%;">
                                     @endif
                                 </div>
-                                <div class="title p-2">
-                                    <h1>{{ str_limit($headline->title, 70) }}</h1>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-6">

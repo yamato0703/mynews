@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'ニュースの新規作成')
+@section('title', '店舗情報の新規作成')
 
 
 @section('content')
@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>ニュース新規作成</h2>
+                <h2>店舗情報</h2>
                 <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
@@ -18,9 +18,15 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
+                        <label class="col-md-2">店舗名</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2">エリア</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="area" value="{{ old('area') }}">
                         </div>
                     </div>
                     <div class="form-group row">

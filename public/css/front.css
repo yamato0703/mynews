@@ -1,5 +1,9 @@
 body {
-  color: #000;
+  color: #FF69B4;
+}
+
+.nav-link {
+  color: #FFFFFF;
 }
 
 .header .logo {
